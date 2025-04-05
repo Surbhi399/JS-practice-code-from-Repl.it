@@ -1,0 +1,133 @@
+// Conditonal expressions
+
+//let age = prompt("What is your age?");
+//age = Number.parseInt(age);
+let age = 10;
+if (age < 0) {
+  console.log("This is an invalid age");
+} else if (age < 12) {
+  console.log("You are kid");
+} else if (age < 20 && age > 12) {
+  console.log("You are teenager");
+} else {
+  console.log("You are adult");
+}
+console.log("You can", age < 18 ? "not drive" : "drive");
+
+// Swith case programee
+
+let day = 4;
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+// Q1 of chapter 2 practice sheet
+let age1 = 22;
+if (age1 > 10 && age1 < 20) {
+  console.log("Your age lies between 10 and 20");
+} else {
+  console.log("Your age does not lies between 10 and 20");
+}
+// Q2 of chapter 2 practice sheet
+let age2 = 22;
+switch (age2) {
+  case 12:
+    console.log("Your age is 12");
+    break;
+  case 13:
+    console.log("Your age is 13");
+    break;
+  case 14:
+    console.log("Your age is 14");
+    break;
+  default:
+    console.log("Your age is not special");
+}
+// Q3 of chapter 2 practice sheet
+let number = 9;
+if (number % 2 == 0 && number % 3 == 0) {
+  console.log(number, "is divisible by 2 and 3");
+} else {
+  console.log(number, "is not divisible by 2 and 3");
+}
+// Q4 of chapter 2 practice sheet
+let number1 = 9;
+if (number1 % 2 == 0 || number1 % 3 == 0) {
+  console.log(number1, "is divisible by 2 or 3");
+} else {
+  console.log(number1, "is not divisible by 2 or 3");
+}
+// Q5 of chapter 2 practice sheet
+let age3 = 19;
+console.log(age3 >= 18 ? "YOU CAN GIVE VOTE" : "YOU CAN NOT GIVE VOTE");
+// Loops
+let Factorial = 1;
+let n = 3;
+for (let i = 1; i <= n; i++) {
+  Factorial *= i;
+}
+console.log("Factorial of " + n + " is " + Factorial);
+
+// For in loop
+let obj = {
+  Abhi: 90,
+  Labh: 89,
+  Kiran: 95,
+  Sunil: 100,
+  Surbhi: 89,
+};
+for (let objs in obj) {
+  //console.log(objs);
+  console.log("Marks of " + objs + " are " + obj[objs]);
+}
+// For of loop (Itratable like string and array)
+let vowels = ["a", "e", "i", "o", "u"];
+
+for (let vowel of vowels) {
+  console.log(vowel);
+}
+// string
+let myname = "Abhishek";
+
+for (let n of myname) {
+  console.log(n);
+}
+// While loop
+let numb = 10,
+  i = 0;
+while (i <= numb) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+  i++;
+}
+// Do while loop (execet atleast once)
+let numb1 = 10;
+let k = 11;
+do {
+  console.log(k);
+  k++;
+} while (k < numb1);
+
+
