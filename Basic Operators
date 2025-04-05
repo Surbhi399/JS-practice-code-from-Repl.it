@@ -1,0 +1,50 @@
+//Airtmetic operators
+let c = 10;
+let d = 4;
+console.log("c+d = ", c + d);
+console.log("c-d = ", c - d);
+console.log("c*d = ", c * d);
+console.log("c/d = ", c / d);
+console.log("c**d = ", c ** d);
+console.log("c%d = ", c % d);
+console.log("c++ = ", c++);
+console.log("c-- = ", c--);
+console.log("++c = ", ++c);
+console.log("--c = ", --c);
+//Assignment operators
+let e = 1;
+e += 5;
+console.log(e);
+e -= 5;
+console.log(e);
+e *= 5;
+console.log(e);
+e /= 5;
+console.log(e);
+e %= 5;
+console.log(e);
+e **= 5;
+console.log(e);
+//Comparison operators
+let comp1 = 6;
+let comp2 = 7;
+console.log("comp1 == comp2 is ", comp1 == comp2);
+console.log("comp1 != comp2 is ", comp1 != comp2);
+console.log("comp1 === comp2 is ", comp1 === comp2);
+console.log("comp1 !== comp2 is ", comp1 !== comp2);
+console.log("comp1 > comp2 is ", comp1 > comp2);
+console.log("comp1 < comp2 is ", comp1 < comp2);
+console.log("comp1 >= comp2 is ", comp1 >= comp2);
+console.log("comp1 <= comp2 is ", comp1 <= comp2);
+//Logical operators
+let x = 5;
+let y = 6;
+console.log(x < y && x == 5);
+console.log(x > y || x == 5);
+console.log(!false);
+console.log(!true);
+//Comments
+//This is a single line comment
+/*This is a sample multiline comment and a tutorial
+from
+codewithSurbhi */
