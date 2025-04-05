@@ -1,0 +1,29 @@
+
+// Q1 of chapter 1 practice sheet
+let a = "hello";
+let b = 1;
+console.log(a + b);
+
+// Q2 of chapter 1 practice sheet
+console.log(typeof (a + b));
+// Q3 of chapter 1 practice sheet
+const car = {
+  name: "bmw",
+  model: "x5",
+  year: "2023",
+};
+//car = 1;
+// Q4 of chapter 1 practice sheet
+car["color"] = "black";
+car["model"] = "x6";
+console.log(car);
+// Q5 of chapter 1 practice sheet
+const dict = {
+  appreciate: "recognize the full worth of.",
+  ataraxia: "a state of freedom from emotional disturbance and anxiety",
+  yakka: "work, especially hard work.",
+  brave: "ready to face and endure danger or pain",
+  anxiety: "a feeling of worry or fear that you can't control.",
+};
+console.log(dict.yakka);
+console.log(dict.brave);
