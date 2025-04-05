@@ -1,0 +1,90 @@
+// Strings
+let Mother = "Kiran Jain";
+console.log(Mother);
+console.log(Mother.length);
+console.log(Mother[4]);
+console.log(Mother[10]);
+console.log(Mother.indexOf("K"));
+// Template literals
+let Brother = "Abhi Jain"
+let Father = "Sunil Jain"
+console.log(`${Brother} is the son of ${Father}`);
+// Escape sequence characters
+let Sister = "Surbhi\'s dress is good";
+console.log(Sister);
+let Sister1 = "Surbhi\nJain";
+console.log(Sister1);
+let Sister2 = "Surbhi\tJain";
+console.log(Sister2);
+let Sister3 = "Surbhi\rJainoo";
+console.log(Sister3);
+// String properties and methods
+let name = "Abhishek";
+console.log(name.length);
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.slice(0,4));
+console.log(name.slice(4));
+console.log(name.replace("Abhishe" ,"Surbhi"))
+console.log(name.concat(" is the son of ",Father , " and " , Mother))
+console.log(name.indexOf("h"));
+console.log(name.lastIndexOf("h"));
+console.log(name.charAt(0));
+console.log(name.charCodeAt(0));
+console.log(name.split(""));
+console.log(name.trim());
+
+
+let name1 = "           Abhishek                ";
+console.log(name1.trim()); /// remove the space starting and ending space 
+console.log(name1.trimStart());
+console.log(name1.trimEnd());
+let name2 = "Abhishek";
+console.log(name2.padStart(12, "x"));
+console.log(name2.padEnd(10, "x"));
+const name3 = "W3Schools";
+let letter = name3.at(2);
+console.log(letter);
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+console.log(part);
+let text = "Hello world!  ";
+let result = text.repeat(2);
+console.log(result);
+let text1 = "I love cats. Cats are very easy to love. Cats are very popular";
+text = text1.replaceAll(/Cats/g,"Dogs");
+text = text1.replaceAll(/cats/g,"dogs");
+console.log(text);
+text2 = text1.replaceAll("Cats","Pandas");
+console.log(text2);
+// Print string using for loops
+let name4 = "Abhi" + "Surbhi" + "Labhesh";
+for(let i=0; i<name4.length;i++)
+{
+  console.log(name4[i]);
+}
+//Q1 of chapter 4 practice sheet
+console.log("Har\'".length);
+//Q2 of chapter 4 practice sheet
+const sentence = "The quick brown fox jumps over the lazy dog";
+const word = "fox";
+console.log(sentence.includes(word));
+console.log(sentence.includes("quick"));
+//console.log(`The word "${word}" ${sentence.includes(word)}` ? 'is' : 'is not' `in the sentence`);
+console.log(sentence.startsWith("The quick"));
+console.log(sentence.endsWith("dog"));
+//Q3 of chapter 4 practice sheet
+console.log("QWERTY".toLowerCase());
+//Q4 of chapter 4 practice sheet
+let str1 = "Please give Rs 1000";
+console.log(str1.slice(15));
+//Q5 of chapter 4 practice sheet
+
+//let str2 = "Abhishek";
+//str2[3] = "R";
+//console.log(str2); // str2 is not changed because string is immutable
+
+let str2 =str1.replace(str1[3], "w");
+console.log(str2);
+
+
