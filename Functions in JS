@@ -1,0 +1,89 @@
+// Functions (taking input return output)
+function Distance(speed, time) {
+  let distance = speed * time;
+  return distance;
+}
+let s = 10,
+  t = 5;
+let d1 = Distance(s, t);
+console.log("Distance is " + Distance(20, 5));
+console.log("Distance is " + d1);
+
+// Arrow function (taking input return output)
+
+const mean = (x, y) => {
+  return (x + y) / 2;
+};
+console.log("Mean is " + mean(10, 20));
+// Arrow function (no input no return)
+const Hey = () => {
+  console.log("Hello I am Surbhi Jain, Nice to meet you");
+};
+Hey();
+// Arrow function (no input return output)
+const hello = () => {
+  return "Hi...I am Labhesh, Nice to meet you";
+};
+//let v = hello();
+console.log(hello());
+// Arrow function (input and no ouput)
+const sum = (a, b) => {
+  console.log("Addition of " + a + " and " + b + " is " + a + b);
+};
+sum(10, 20);
+
+// Practice set chapter 3
+// Q1 of chapter 3 practice sheet
+const marks = {
+
+  Abhi: 90,
+  Labh: 89,
+  Kiran: 95,
+  Sunil: 100,
+  Surbhi: 89
+}
+// Q2 of chapter 3 practice sheet
+for(let mark in marks){
+  console.log(marks[mark]);
+  console.log(mark);
+  console.log("Marks of " + mark + " are " + marks[mark]);
+//Q1 of chapter 3 practice sheet
+}
+for(let i = 0; i< Object.keys(marks).length; i++){
+  console.log ("Marks of " + Object.keys(marks)[i] + " is " + marks[Object.keys(marks)[i]]);
+}
+// Q3 of chapter 3 practice sheet
+/*let correctNum = 10;
+ let x1;
+while(x1 != correctNum){
+  //x1 = prompt("Enter a number");
+ 
+}
+console.log("You have entered a correct number");*/
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let correctNum = 10;
+
+function askNumber() {
+    rl.question("Enter a number: ", (x1) => {
+        if (parseInt(x1) === correctNum) {
+            console.log("You have entered a correct number");
+            rl.close();
+        } else {
+            askNumber();
+        }
+    });
+}
+
+askNumber();
+
+// Q4 of chapter 3 practice sheet
+const mean1 = (a, b, c, d, e) => {
+  return (a+b+c+d+e)/5;
+}
+console.log ("Mean of 5 no. is " + mean1(1,2,3,4,5));
