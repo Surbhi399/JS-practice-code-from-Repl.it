@@ -90,4 +90,43 @@ numbers3.forEach ((element) => {
   console.log(element * element);
 });
 
+// Array map method
+let ar1 = [40, 2, 20, 30, 45, 50];
+
+let a2 = ar1.map((value, index, array) => {
+  // map returns the new array and apply the function to each element of the array
+  console.log(value, index, array);
+  return value + index;
+});
+console.log(a2);
+
+// Array filter method (returns the new array and apply the function to each element of the array)
+
+let ar2 = [40, 2, 20, 30, 40, 50];
+// let ar3 =ar2.filter((a)=> {
+//   return a<30;
+// })
+
+// function can be defined outside the filter method
+
+let lessThen30 = (a) => {
+  return a < 30;
+};
+let ar3 = ar2.filter(lessThen30);
+console.log(ar3);
+
+// Array reduce method (returns the single value and apply the function to each element of the array)
+
+let ar4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let ar5 =ar4.reduce((x , y) =>
+//{return x+y;}
+// );
+
+// function can be defined outside the reduce method
+
+let sumOfArray = (x , y) => {
+  return x+y;
+}
+let ar5 = ar4.reduce(sumOfArray);
+console.log(ar5);
 
