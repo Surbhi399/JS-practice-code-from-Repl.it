@@ -1,0 +1,20 @@
+//Excerise (Guess the Number)
+
+
+let num = Math.floor(Math.random() * 100); // Random number between 0 and 99
+console.log(num); // For debugging
+let count = 0;
+let a = prompt("Guess the number between 0 and 99:");
+a = Number.parseInt(a);
+
+while (a !== num) {
+    count++;
+    if (a > num) {
+        a = prompt("Too high! Try again:");
+    } else if (a < num) {
+        a = prompt("Too low! Try again:");
+    }
+    a = Number.parseInt(a);
+}
+
+alert(`Hurrah! You guessed the right number in ${count + 1} attempts!`);
