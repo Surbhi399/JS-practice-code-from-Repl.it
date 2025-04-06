@@ -20,3 +20,47 @@ let NameOftheStudent = ["Abhi", "Surbhi", "Labhesh", "Kiran", "Sunil", "Shinchan
 for(let i = 0; i < NameOftheStudent.length; i++){
   console.log(NameOftheStudent[i]);
 }
+// Array methods
+let num = [1, 2, 3, 34, 34];
+let b1 = num.toString(); // b is now a string
+console.log(b1, typeof b1);
+let c1 = num.join(" and "); // c is now a string
+console.log(c1, typeof c1);
+let e1 = num.pop(); // pop returns the popped element and remove the last element
+console.log(num, e1);
+let f1 = num.push(56); // push returns the new array length and add the element at the end
+console.log(num, f1);
+let g1 = num.shift(); // shift returns the shifted element and remove the first element
+console.log(num, g1);
+let h1 = num.unshift(78); // unshift returns the new array length and add the element at the beginning
+console.log(num, h1);
+//let j1 = num.delete(2); // delete returns true and delete the element at the given index
+//console.log(num, j1);
+let k1 = num.concat(1, 22, 3, 42, 5); // concat returns the new array and add the elements at the end
+console.log(num, k1, k1.length );
+// const m1 = [2,5,7,1,3,33,22,55,4,9]
+// let l1 = m1.sort(); // sort returns the sorted array
+// console.log("Array of K1 is "+ m1 , "Array of l1 is "+ l1);
+
+const m1 = [2, 5, 7, 1, 3, 33, 22, 55, 4, 9];
+let l1 = m1.sort((a, b) => a - b); // Sort numerically
+console.log(`Array of m1 is ${m1}`);
+console.log(`Array of l1 is ${l1}`);
+
+
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const sorted = months.toSorted();
+console.log(months,sorted);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.sort());
+let n1 = num.splice(2, 3, 1021, 1022, 1023, 1024, 1025);
+ // splice returns the deleted elements and add the elements at the given index
+console.log(num, n1);
+let o1 = num.slice(3);
+ // slice returns the new array and remove the elements from the given index to the end
+console.log(num, o1);
+let p1 = num.reverse(); // reverse returns the reversed array
+console.log( p1);
+
+
