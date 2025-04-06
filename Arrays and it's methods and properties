@@ -63,4 +63,31 @@ console.log(num, o1);
 let p1 = num.reverse(); // reverse returns the reversed array
 console.log( p1);
 
+// Using loops with arrays
+let numbers = [11,22,33,44,55,66,77,88,99];
+for (let i = 0; i <numbers.length; i++){
+  console.log(numbers[i]);
+}
+// Array from
+let name5 = "Abhishek";
+let arr = Array.from(name5);
+console.log(arr);
+// for of loop
+let numbers1 = [11,22,33,44,55,66,77,88,99];
+for(let i of numbers1){
+  console.log(i);
+}
+// for in loop
+let numbers2 = [11,22,33,44,55,66,77,88,99];
+for(let i in numbers2){
+  console.log(i); // print index
+  console.log(numbers2[i]); // print value
+}
+// for each loop
+let numbers3 = [1,2,3,4,5,6,7,8,9];
+
+numbers3.forEach ((element) => {
+  console.log(element * element);
+});
+
 
