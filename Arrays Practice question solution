@@ -1,0 +1,55 @@
+// Practice set chapter 5
+
+// Q1 of chapter 5 practice sheet
+
+let item = [];
+let arr = [1,2,3,4];
+let a = prompt("Enter the number");
+a = Number.parseInt(a);
+arr.push(a);
+console.log(arr);
+
+// Q2 of chapter 5 practice sheet
+
+
+let arr = [1,2,3,4];
+let a;
+do{
+a = prompt("Enter the number");
+a = Number.parseInt(a);
+arr.push(a);
+} while(a != 0); 
+console.log(arr);
+
+// Q3 of chapter 5 practice sheet
+
+let p = [10,11,20,33,44,100,7,112];
+let divisibleBy10 = (x) => {
+  return x%10 == 0;
+}
+let q = p.filter(divisibleBy10);
+console.log(q);
+
+// Q4 of chapter 5 practice sheet
+
+
+let p = [10,11,12,13,20,100]
+let squareOfNumber = (y)=> {
+  return y*y;
+}
+let r = p.map(squareOfNumber);
+console.log(r);
+
+//  Q5 of chapter 5 practice sheet
+
+let n = prompt("Enter the number for factorial");
+    n = Number.parseInt(n);
+let arr = [];
+let factorilOfArray = (x,y)=> {
+    return x*y;
+}
+for(let i = 1; i <=n ; i++ ){
+    arr.push(i);
+}
+let p = arr.reduce(factorilOfArray);
+console.log(p);
