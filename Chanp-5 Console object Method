@@ -1,3 +1,17 @@
+Source code:
+let obj1 = {
+    name: 'Surbhi Jain',
+    DOB: '21/05/1998',
+    City: 'Hyderbad',
+    Company: 'AmpleLogic',
+    Profile: 'BA'
+}
+console.time('Forloop');
+for(let i= 0 ; i< 5 ; i++){
+    console.log(i);
+}
+console.timeEnd('Forloop');
+
 Input : console.log("Hello I'm Console log");
 Output: Hello I'm Console log
 
@@ -15,5 +29,16 @@ Output:
 
 Input : console.table(obj);
 Output: table format view of key and values
+
+Input : console.warn("Hello I'm console warn()");
+Output: Hello I'm console.warn() // with yellow color 
+
+Input : console.info("Hello I'm console.info()");
+Output: Hello I'm console.info()
+
+
+
+
+
 
 
