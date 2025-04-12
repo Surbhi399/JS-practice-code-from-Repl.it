@@ -1,0 +1,19 @@
+Input : console.log("Hello I'm Console log");
+Output: Hello I'm Console log
+
+Input : console.error("Hello I'm Console error");
+Output: Hello I'm Console error // with red color 
+
+Input : console.error("Hello I'm Console error");
+Output: Hello I'm Console error // with red color 
+
+Input : console.assert("Hello I'm Console log" == true);
+Output: VM2567:1 Assertion failed: console.assert // with red color 
+
+Input : console.assert(10>9);
+Output: 
+
+Input : console.table(obj);
+Output: table format view of key and values
+
+
