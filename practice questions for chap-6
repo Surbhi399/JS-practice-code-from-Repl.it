@@ -1,3 +1,5 @@
+
+// Question 1,2,3
 let a = prompt("Please enter your age here");
 a = Number.parseInt(a);
 if(a<0){
@@ -18,3 +20,25 @@ if (b){
 else{
   alert("thankyou")
 }
+//// Question 4
+let a = prompt("Please enter your age here");
+a = Number.parseInt(a);
+if (a>4){
+    location.href = "https://webflow.com/made-in-webflow/demo";
+}
+// Question 5
+
+let a = prompt("Please enter your age here");
+a = Number.parseInt(a);
+if (a>0 && a<18){
+     document.body.style.backgroundColor = "red";
+}
+if (a>=18 && a <65){
+     document.body.style.backgroundColor = "green";
+}
+if(a>= 65){
+     document.body.style.backgroundColor = "yellow";
+}
+ 
+ 
+
