@@ -20,7 +20,34 @@ if (b){
 else{
   alert("thankyou")
 }
+
+// Alternate solution
+
+let runAgain = true;
+const canDrive = (age)=>{
+ return  age>=18 ? true : false
+}
+
+while(runAgain){
+let age = prompt("Please enter your age here");
+age = Number.parseInt(age);
+  if(age<0){
+    console.error("The invalid age you have entered");
+    break;
+  }
+if(canDrive(age))
+{
+  alert("You can drive");  
+}
+ else{
+  alert("You can't drive");
+}
+  runAgain = confirm("Do you want to see prompt again");
+}
+
+
 //// Question 4
+
 let a = prompt("Please enter your age here");
 a = Number.parseInt(a);
 if (a>4){
@@ -39,6 +66,10 @@ if (a>=18 && a <65){
 if(a>= 65){
      document.body.style.backgroundColor = "yellow";
 }
+
+/// background color changing as per user choice 
+let color = prompt("Enter the color of your choice for background");
+ document.body.style.backgroundColor = color;
  
  
 
