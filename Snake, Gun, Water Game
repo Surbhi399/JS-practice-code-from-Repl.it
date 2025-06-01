@@ -1,0 +1,29 @@
+confirm("Hello Guys!, Do you want to play Snake, Gun or Water.");
+confirm("Rules: 1. Between snake and gun, Gun wins. 2. Between snake and water, Snake wins. 3. Between gun and water, Water wins");
+
+let userElement = prompt("Please Enter any letter among (S for Snake, G for Gun or W for Water).").toUpperCase();
+const gameElements = ["S", "W", "G"];
+
+function getRandomFromArray(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    return arr[randomIndex];
+}
+
+let randomElement = getRandomFromArray(gameElements);
+if (userElement === randomElement) {
+    alert("Both have the same element... Please Try Again");
+} else if (userElement === "S" && randomElement === "W") {
+    alert("You win!");
+} else if (userElement === "S" && randomElement === "G") {
+    alert("You lost!");
+} else if (userElement === "W" && randomElement === "G") {
+    alert("You win!");
+} else if (userElement === "W" && randomElement === "S") {
+    alert("You lost!");
+} else if (userElement === "G" && randomElement === "W") {
+    alert("You lost!");
+} else if (userElement === "G" && randomElement === "S") {
+    alert("You win!");
+} else {
+    alert("Invalid input! Please enter S, G, or W.");
+}
